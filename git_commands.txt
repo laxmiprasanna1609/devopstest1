@@ -87,3 +87,98 @@ esc :w
 esc :q
 or
 esc :wq!
+
+rm -rf file-name
+
+
+
+================================
+git clone https://github.com/polarapu/batch-53.git
+ls
+cd batch-53
+ls
+touch name
+git status
+git add name
+git status
+git commit -m "commit by name"
+git status
+git log
+git push
+git pull --rebase
+git push
+
+mkdir dir-name
+cd dir-name
+touch a1 a2 a3
+cd ..
+git add .
+git ommit -m "label"
+git push
+
+git log (shows all logs)
+git log --oneline (displays 7 chars of commit id and comments only)
+git log -n (n can be any number of recent commist)
+git log --oneline -n
+
+git log --author=name
+git log --author=name -n
+git log --author=name --oneline
+git log --author=name --oneline -name
+
+git log --since=yy-mm-dd (from to till date)
+git log --until=yy-mm-dd (start to until)
+git log --after=yy-mm-dd
+git log --before=yy-mm-dd
+
+git log --after=yy-mm-dd --before=yy-mm-dd
+git log --after="yy-mm-dd hh:mm" --before="yy-mm-dd hh:mm"
+
+git log --grep="commitname"
+git log --grep="filename"
+
+git log --filename(to check logs for a file name)
+
+Branches:
+git branch (gives list of branches)
+git branch branch-name (creates a new branch)
+git checkout branch-name(to enter into a branch)
+git  branch(to check if we are in which branch)
+
+Copy data from one branch to another
+git checkout branch-name
+git merge branch-name(src branch)
+git branch -d branch-name (to delete a brannch)
+git diff branch1 branch2(diff b/w mentioned branches)
+
+Push branch to central repo
+git push path of repo branch-name
+or 
+git push origin branch-name
+
+git pull origin branch-name(to pull changes in branch to local repo)
+git pull --rebase(pull to master branch)
+
+Push onnly particular commits
+git cherry-pick "commit  id"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
